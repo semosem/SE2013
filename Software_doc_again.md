@@ -1,5 +1,5 @@
-##:sweat: SOFTWARE DOCUMENTATION :sweat:
-                                                                                                          -the lost case 
+>## SOFTWARE DOCUMENTATION :sweat:
+                                                                                                   -the lost case 
 ><p>This document is written as software documentation for way finding system in a private hospital called Hayat Hospital located in Addis Ababa, Ethiopia. 
 
 
@@ -13,7 +13,7 @@ Product Name                                           | Team members           
 
 
 
->##Table of Contents
+>###Table of Contents
 
 1.	`Introduction`
 2.	`User requirements definition`
@@ -34,9 +34,7 @@ Product Name                                           | Team members           
 
 
 
->## Introduction 
-
-
+>### Introduction 
 
 <p>At some point in our life, we all have wished if we could hear a magic direction whispered to our ear after getting in a situation where we couldn’t find a way to a particular destination inside a building. It’s frustrating, especially if we have to get to the place we want to go in an emergency cases. These situations are much worse and very serious issues when they involve healthcare service providing hospitals, as a patient or as a family of an injured person it might be necessary to get the service required immediately.
 
@@ -46,5 +44,15 @@ This Private Hospital named Hayat hospital is formerly a government hospital loc
 The kiosk system requires a web browser with good support of standard web Technologies – HTML 4, CSS 2, JavaScript, DOM, XML and XSLT. Also browser should have possibility to play back audio files either built in or via external plugin and run Java applets, because printing will be implemented using this Technology.
 The system is also expected to introduce neat patient-flow, a significant increase in on-time appointments, improved patient experience and by providing a more efficient use of staff time and can reduced costs considerably.
 
->## Introduction 
+>### User Requirement Definition 
+
+<p> Our product will primary have three main actors.Depending on the credential provided some features of our system will be available and some will be hidden. 
+
+1. registered user
+2. administrator and 
+3. visitor
+
+
+
+
 
