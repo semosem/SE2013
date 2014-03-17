@@ -168,10 +168,14 @@ After users choice is recieved from search results, the next page will appear co
 `Figure>4: User interface Search result in department search`
 
 <p>The map image will appear at the middle of the page beneath that there are two option buttons indicating the walking distance and time. However the audio assistant will also address the walking distance the description of the route path verbally.
-At the very bottom of this page there are department, room, shop and dinning option buttons that will redirect the user to another new search using the other options. This buttons are the ones that appear at the initial page of the system.
-At the left edge of the page the print action option and email option buttons are placed.
 
-dsfsdf
+
+![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/emailme.jpg)
+`Figure>4: Send location info to email or Phone number`
+
+At the very bottom of this page there are department, room and informations that provide shop and dinning area advertizments with in the building and these buttons will redirect the user to another new search containing only the waiting and refreshment area locations. Alos at the left edge of the page the print action option and email option buttons are placed.
+
+
 
 
 
