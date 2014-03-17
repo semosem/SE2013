@@ -143,17 +143,31 @@ The UML class diagram below shows a more clear description of high-level compone
 
 ####User interface prototype
 
-The figures below are drawings of user interface at different circumstances of the system. 
->Figure 4 below is the initial page, which user sees when he starts using kiosk.Users can see the initial page that has an operator recorded women(audio assistant ) that explains what the user shall do inorder to get the most out of the kiosk. Users define whether they want to browse through *departments* or  *room* with in the building. 
+The figures below are drawings of user interface at different circumstances of the system. Figure 4 below is the initial page, which user sees when he starts using kiosk.Users can see the initial page that has an operator recorded women(audio assistant ) that explains what the user shall do inorder to get the most out of the kiosk. Users define whether they want to browse through *departments* or  *room* with in the building. 
 
 
-![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/ui.jpg)
+![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/userinitial.jpg)
 
 `Figure>4: User interface prototype of the initial page`
 
-<p>At the very bottom of the page there is a detached bar containing the daily event search button. The interface comes with a recorder sound guide asking the user what he wants to do.
-Image 2: Search by Department: when the user chooses the option to find a location by department the interface will appear as in “image 2”which will have the list of departments listed down, with down and up arrows buttons  on the left  assisted to browse the user the specific department he wants to choose. Once the user found and click the department of his chooses the link bar having the department name will turn into blue and the department will be taken as the user’s final destination automatically.
-Image 3: once the search is done, the next page will appear with a full map image indicating the whole direction path. The map has a spot (a red button locating the current location of the user), and green button indicating the final destination of the user. The route path is drawn between this spots on the map. The map image will appear at the middle of the page beneath that there are two option buttons indicating the walking distance and time. However the audio assistant will also address the walking distance the description of the route path verbally.
+<p>At the very bottom of the page there is a detached bar containing the daily event ocurance. The interface comes with a recorder sound guide asking the user what he wants to do.
+
+When the user chooses the option to find a location by department name the interface will appear as in “Figure 2” below which will have the list of departments listed down, with down and up arrows buttons  on the left  assisted to browse the user the specific department he wants to choose. 
+
+![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/dept.jpg)
+
+`Figure>4: User interface Search result in department search`
+
+Once the users found and clicked on the department of their liking the link bar having the department name will turn into blue and the department will be taken as the user’s final destination automatically.
+
+
+
+After users choice is recieved from search results, the next page will appear containing a full map image and all information indicating the whole direction path. The map will have a red spot that indicates current location of the user and green button indicating the final destination of the user.The route path is drawn between this two spots on the map.
+
+![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/map.jpg)
+`Figure>4: User interface Search result in department search`
+
+<p>The map image will appear at the middle of the page beneath that there are two option buttons indicating the walking distance and time. However the audio assistant will also address the walking distance the description of the route path verbally.
 At the very bottom of this page there are department, room, shop and dinning option buttons that will redirect the user to another new search using the other options. This buttons are the ones that appear at the initial page of the system.
 At the left edge of the page the print action option and email option buttons are placed.
 
