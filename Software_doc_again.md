@@ -171,7 +171,7 @@ After users choice is recieved from search results, the next page will appear co
 At the very bottom of this page there are department, room, shop and dinning option buttons that will redirect the user to another new search using the other options. This buttons are the ones that appear at the initial page of the system.
 At the left edge of the page the print action option and email option buttons are placed.
 
-
+dsfsdf
 
 
 
