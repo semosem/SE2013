@@ -5,12 +5,12 @@
 
 #####About this Project
 
-Product Name                                           | Team members             |Original Date |Edited on |
-|:------------------------------------------------------|:--------------------------|:--------------:|----------      
-| Find my way                                          |  ~~Lily Gebremariam~~    | 6.12.2013    |16.3.2014
-|                                                      |  Sem Gebreseillase       |              |
+Product Name       | Team members             |Original Date |Edited on |
+|:-----------------|:-------------------------|:------------:|----------      
+| Find my way      |  ~~Lily Gebremariam~~    | 6.12.2013    |16.3.2014
+|                  |  Sem Gebreseillase       |              |
 
-
+`Table>1: project description`
 
 
 >###Table of Contents
@@ -35,7 +35,7 @@ Product Name                                           | Team members           
 
 >### Introduction 
 
-<p>At some point in our life, we all have wished if we could hear a magic direction whispered to our ear after getting in a situation where we couldn’t find a way to a particular destination inside a building. It’s frustrating, especially if we have to get to the place we want to go in an emergency cases. These situations are much worse and very serious issues when they involve healthcare service providing hospitals, as a patient or as a family of an injured person it might be necessary to get the service required immediately.
+<p>At some point in our life, we all have wished if we could hear a magic direction whispered to our ear after getting in a situation where we couldn’t find a way to a particular destination inside a big building. It’s frustrating, especially if we have to get to the place we want to go in an emergency case. Situations like this are much worse and very serious issues when they involve healthcare service providing hospitals, as a patient or as a family of an injured person it might be necessary to get the service required immediately.
 
 <p>This problem has inspired us to come up with idea of designing a “way finding” System for a certain health care center that uses touch screen standing kiosks and their interactivity nature. We believe that his system we are building will provide a step-by-step directions and distance- time information to patients and visitors of Hayat Hospital.
 This Private Hospital named Hayat hospital is formerly a government hospital located in Addis Ababa Ethiopia and is infamous for having a huge departments and facilities but a weak information service. 
@@ -83,44 +83,45 @@ Thus "new user" event is just a switch from inactive state to active one.
 
 7. **Send map to phone:** another option for users to grab on to the inofrmation they want is by  sending it to a their phone. This can be done by entering a phone number on phone number typing bar and  pressing *”send to phone button”*.
 
-8. **Browse daily event (news):** At any moment of time users can browse information about system updates, place where terminal located, etc. Each piece of such information/news for simplicity, will have a long list with content start and end dates. Also news will be assigned to one or more terminals, on which they should be shown. 
+8. **Browse daily event (news):** At any moment of time users can browse information about system updates, place where terminal located, or advertizments etc. Each piece of such information/news for simplicity, will have a long list with content start and end dates. Also news will be assigned to one or more terminals, on which they should be shown. 
 
 
 
->![fallback text](http://users.metropolia.fi/~semg/SoftwareEngineering/auc.jpg)
+'![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/useruc.jpg)'
 
+`Figure>1: User's use-case diagram`
 
 
 ####Administrator's use-cases
 -------------
-The administrator can use any personal computer for accessing administration functionality, but these functionality should be protected from unauthorized access.
+The administrator can use any personal computer for accessing administration functionality by plugging it a central system that connect with all kiosks in the building, These following functionality are protected from unauthorized access.
 
-1. **Login to administration area:** Whenever the administrator wants to use service he has to provide authentication information in form of User name and password. However he doesn’t have to log in whenever he has to done something. Once logged in his session should last until administrator logs out.
+1. **Login to administration area:** Whenever the administrator wants to use service he has to provide authentication information in form of User name and password. Once logged in his session the admin can continue with admin activities should last until loged out.
 
-2. **Browse list of locations:** Administrator can get list of all locations stored in database with possibility to filter out list by department directory or and shop and dinning. Location list will contain only location name to be able to show more directions on screen.
+2. **Browse list of locations:** Administrator can get list of all locations stored in database with possibility to filter out lists by department directory and/or rooms with in the building. Locations will be displayed following the search command.
 
-3. **Add location to database:** Administrator can add new location to Database at any moment. For adding a new location he has to enter its description, edit the name of the location and select appropriate categories. (Determine whether the specific location is in the department, room or shop category).
+3. **Add location to database:** Administrator can add new location to the database at any moment while logged in. For adding a new location he has to enter its description, name of the location and select appropriate categories. (Determine whether the new location is in the department catagory or room).
 
-4. **Edit location in database:** During browsing location list administrator can choose any location for editing. When he does it direction will be shown in full view – title, description, categories, with possibility to edit update any of these components. When updates are made administrator can save them in database.
+4. **Edit location in database:** During browsing locations list administrator can also choose any location for editing. When he does it direction will be shown in full view – title, description, categories, with possibility to edit update any of these components. When updates are made administrator can save them in database.
 
-5. **Remove database:** When administrator browses the location list (Use-case 2.2) he can choose any of them for deletion. But before location will be deleted from database administrator must confirm it once again. After confirmation location will be erased from database permanently.
+5. **Remove location from database:** When administrator browses the location list (Use-case 2) he can choose any of them for deletion. But before location will be deleted from database administrator must confirm it once again. After confirmation location will be erased from database permanently.
 
 6. **Add route path (direction map):** If the admin add a new location, edit, or delete in (case 2.4, 2.5, 2.6)he has to update the direction map for the newly added location or edit the map for the edited location. For example, in case of an elevator broke down the route path might be different one from the one that has already been made.
 
-7. **Browse list of “daily events”:** Administrator can get list of “all daily event” stored currently in database. News list will contain news title and description, time period, when news will be displayed, and terminals, where news will be shown.
+7. **Browse list of *daily events*:** Administrator can get list of “all daily events” stored currently in database for analysis perpose. News list will contain news title and description, time period, when news will be displayed, and terminals, where news will be shown.
 
-8. **Add news to database:** Administrator can add news to database at any moment. For adding news he has to enter its title, description, choose period, when it should be displayed, and select appropriate terminals, where news will be shown.
+8. **Add news to database:** Administrator can add also add news and advertizments if interested. For adding news he has to enter its title, description, choose period, when it should be displayed.
 
-9. **Edit news in database:** During browsing news list administrator can choose any “daily event “and edit it. When he does it all parts of news will be shown – title, description, terminals and time period, with possibility to edit update any of these components. When updates are made administrator can save them in database.
-
-10. **Remove *daily event* from database:**When administrator looks through news list (Use-case 2.6) he can delete any event that doesn’t occur at that date or outdated. But before news will be deleted from database administrator must confirm it once again. After confirmation news will be erased from database permanently.
+10. **Remove *daily event* from database:** When administrator looks through news/daily events list (Use-case 7) he can delete any event that doesn’t occur at that date or outdated. But again,before news will be deleted from database administrator must confirm it once again. After confirmation news will be erased from database permanently.
 
 11. **Browse list of terminals:** Administrator can have the access to any terminal connected to the system. For each terminal there should be information if terminal is working currently or not.
 
-12. **Browse terminal's statistics:** While browsing list of terminal administrator can choose any terminal to browse detailed information about. This information can include place where terminal is located and statistical data of terminal's use. Administrator can choose period for which statistics should be calculated. Statistical data will include how many people used terminal, what directions where browsed and what directions were printed.
+12. **Browse terminal's statistics:** While browsing list of terminal administrator can choose any terminal to browse detailed information about it. This information can include place where terminal is located and statistical data of terminal's use. Administrator can choose period for which statistics should be calculated. Statistical data will include how many people used terminal, what directions where browsed and what directions were printed.
 
 
+![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/adminuc.jpg)
 
+`Figure>2: admin's use-case diagram`
 
 
 >###System archtecher
@@ -128,13 +129,13 @@ The administrator can use any personal computer for accessing administration fun
 #### High-level overview of the system
 ______
 
-The UL class diagram below is a description of high-level components responsible for required functionality and associations between these components.it represent the logical view on system architecture.
-
-####Main modules and their functions represented
-______
+The UML class diagram below shows a more clear description of high-level components necessary for required functionality and the associations amaong them. We recoment to take you to give it a closer look because it represents the logical view on system architecture.
 
 
-Figure: class diagram
+
+![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/ULclass.jpg)
+
+`Figure>3: UL Class diagram(Main modules and their functions represented)`
 
 
 
@@ -150,6 +151,7 @@ Administrator controller has the purpose of implementing authentication and auth
 >###User Interface
 
 ####User interface prototype
+
 These figures below are drawings of user interface at different circumstances of the system. 
 Image 1:image1 is the initial page, which user sees when he starts using kiosk.
 
