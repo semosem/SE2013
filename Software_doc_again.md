@@ -87,6 +87,8 @@ Thus "new user" event is just a switch from inactive state to active one.
 
 
 
+>![fallback text](http://users.metropolia.fi/~semg/SoftwareEngineering/auc.jpg)
+
 
 
 ####Administrator's use-cases
@@ -180,5 +182,22 @@ ___
 • the number of users who uses the kiosk and the specific task they perform like the map that was displayed to them and whether the map being printed will be stored as a data.
 •possible tasks will be designed for the administrator like adding, editing and deleting directions when conditions change, like an out-of-service elevator or closed hallway. And news, viewing statistical data;
 • The administrator’s task should be secured from unauthorized person, authentication is checked using password and user name.
+
+
+>###Non-functional requirments
+
+####Usability 
+The interfaces are very straight and simple to use. The map simply spots your current location; draw the path that you follow until you reach your destination. The system spots facilities, stairs, and emergency exits with icons and explain them. Make rest-rooms stand out (more often than not, the first thing visitors will look for when they enter your building). The maps will give a better sense of space, distance and direction.
+The direction is signified by buttons. Make them large, the text self-explanatory and present them clustered in a designated area, the audio guide makes the path easier to understand, even if we were unable to understand the path from the map. Above all the audio will help for disabled patients, have eyesight problem and the user can be sited and able to the kiosk
+4.2. Reliability
+These applications interface, stop users from changing the configuration of software or downloading computer viruses.it provides a 24, 7 services, and includes a fully-fledged digital signage system. : improved patient-flow, an increase in on-time appointments, more efficient use of staff time, decrease costs and a significantly boosted patient experience, all at a cost far less than you would pay a single FTE.
+4.3. Efficiency
+4.4. Other Non-functional Requirement
+• The project doesn’t need to cost lot of money as the company’s request so we minimize the Internet traffic; no additional cost could be added to the project like additional software cost.
+• As the system will be viable, so we could not revile the source code to the public;
+• The company set 9 months to implement and deliver the system to them.
+2 Project Management
+ In order to prepare this documentation it took us more than 60 hours, probably each person take 20 hrs. And the most difficult part was to decide on which system should we take as our project because the way finding system has both a web based application that could be run on Pcs and the kiosk terminal ,which we consider now. We were about to write about the web based app however we found it having too much details and with the time that we had we found It better to take this system. We almost write for both options and that’s way we had to linger on the project submission deadline. However to be genuine we didn’t start the project in time we promised ourselves not to rush when another project came up.
+
 
 
