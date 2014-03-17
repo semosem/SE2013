@@ -139,23 +139,19 @@ The UML class diagram below shows a more clear description of high-level compone
 
 
 
-
-The above model consists of: direction Service, Terminal Statistics Service and daily event Service. This part is responsible for management data recovery and alteration activities.
-View part is characterized by direction UI, daily event UI, Administrator UI and Print Utility, email utility.
-The logical view is shown (expressed) using class diagram.
-Direction UI: decreases interfaces for direction search, search results and direction itself.
-The admistrotor UL: any change within the map interface like addition or removal will be handled by the administrator UL.
-What the user entered as a data, like email is controlled by Kiosk Controller and Administrator Controller. Moreover the data that is transferred in-between the model and the view is handled by the two controllers.
-Administrator controller has the purpose of implementing authentication and authorization functions; beforehand the administrator preforms any operation .direction, log event, terminal and news modules serve as information exchanger between the three components: controller, view and mode
-
 >###User Interface
 
 ####User interface prototype
 
-These figures below are drawings of user interface at different circumstances of the system. 
-Image 1:image1 is the initial page, which user sees when he starts using kiosk.
+The figures below are drawings of user interface at different circumstances of the system. 
+>Figure 4 below is the initial page, which user sees when he starts using kiosk.Users can see the initial page that has an operator recorded women(audio assistant ) that explains what the user shall do inorder to get the most out of the kiosk. Users define whether they want to browse through *departments* or  *room* with in the building. 
 
-Users can see the initial page comes with a women(audio assistant ) image in the top and  Three buttons o listed in column used to switch between” department browsing” and room, “shop and dinning” search options. At the very bottom of the page there is a detached bar containing the daily event search button. The interface comes with a recorder sound guide asking the user what he wants to do.
+
+![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/ui.jpg)
+
+`Figure>4: User interface prototype of the initial page`
+
+<p>At the very bottom of the page there is a detached bar containing the daily event search button. The interface comes with a recorder sound guide asking the user what he wants to do.
 Image 2: Search by Department: when the user chooses the option to find a location by department the interface will appear as in “image 2”which will have the list of departments listed down, with down and up arrows buttons  on the left  assisted to browse the user the specific department he wants to choose. Once the user found and click the department of his chooses the link bar having the department name will turn into blue and the department will be taken as the user’s final destination automatically.
 Image 3: once the search is done, the next page will appear with a full map image indicating the whole direction path. The map has a spot (a red button locating the current location of the user), and green button indicating the final destination of the user. The route path is drawn between this spots on the map. The map image will appear at the middle of the page beneath that there are two option buttons indicating the walking distance and time. However the audio assistant will also address the walking distance the description of the route path verbally.
 At the very bottom of this page there are department, room, shop and dinning option buttons that will redirect the user to another new search using the other options. This buttons are the ones that appear at the initial page of the system.
