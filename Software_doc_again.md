@@ -35,6 +35,8 @@ Product Name       | Team members             |Original Date |Edited on |
 
 >### Introduction 
 
+-------------
+
 <p>At some point in our life, we all have wished if we could hear a magic direction whispered to our ear after getting in a situation where we couldn’t find a way to a particular destination inside a big building. It’s frustrating, especially if we have to get to the place we want to go in an emergency case. Situations like this are much worse and very serious issues when they involve healthcare service providing hospitals, as a patient or as a family of an injured person it might be necessary to get the service required immediately.
 
 <p>This problem has inspired us to come up with idea of designing a “way finding” System for a certain health care center that uses touch screen standing kiosks and their interactivity nature. We believe that his system we are building will provide a step-by-step directions and distance- time information to patients and visitors of Hayat Hospital.
@@ -45,8 +47,10 @@ This Private Hospital named Hayat hospital is formerly a government hospital loc
 
 >### User Requirement Definition 
 
-####User group definition
 -------------
+
+####User group definition
+
 
 <p> Our product will primary have two main actors and depending on the credential provided some features of our system will be available and some will be hidden. These two actors are
 
@@ -62,7 +66,7 @@ This Private Hospital named Hayat hospital is formerly a government hospital loc
 
 
 ####User's use-cases
--------------
+
 The folloing numbered out use-cases are available for anyone without any authorization request whatsoever from any kiosk terminal inside Hayat Hospital.
 
 1. **Activate the system:** In order to calculate the amount of users who used each kiosk inside the building, a "new user" event will be stored in statistics journal whenever new user touches screen. To distinguish users, timeout mechanism will be engaged and system will have two conditions: 
@@ -93,7 +97,8 @@ Thus "new user" event is just a switch from inactive state to active one.
 
 
 ####Administrator's use-cases
--------------
+
+
 The administrator can use any personal computer for accessing administration functionality by plugging it a central system that connect with all kiosks in the building, These following functionality are protected from unauthorized access.
 
 1. **Login to administration area:** Whenever the administrator wants to use service he has to provide authentication information in form of User name and password. Once logged in his session the admin can continue with admin activities should last until loged out.
@@ -124,10 +129,12 @@ The administrator can use any personal computer for accessing administration fun
 `Figure>2: admin's use-case diagram`
 
 
->###System archtecher
+>###System architecture
+
+----
 
 #### High-level overview of the system
-______
+
 
 The UML class diagram below shows a more clear description of high-level components necessary for required functionality and the associations amaong them. We recoment to take you to give it a closer look because it represents the logical view on system architecture.
 
@@ -140,6 +147,8 @@ The UML class diagram below shows a more clear description of high-level compone
 
 
 >###User Interface
+
+----
 
 ####User interface prototype
 
@@ -170,50 +179,92 @@ After users choice is recieved from search results, the next page will appear co
 <p>The map image will appear at the middle of the page beneath that there are two option buttons indicating the walking distance and time. However the audio assistant will also address the walking distance the description of the route path verbally.
 
 
-![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/emailme.jpg)
-`Figure>4: Send location info to email or Phone number`
+![hmmm](http://users.metropolia.fi/~semg/SoftwareEngineering/emailMe.jpg)
+`Figure>5: Send location info to email or Phone number`
 
-At the very bottom of this page there are department, room and informations that provide shop and dinning area advertizments with in the building and these buttons will redirect the user to another new search containing only the waiting and refreshment area locations. Alos at the left edge of the page the print action option and email option buttons are placed.
-
-
+<p>At the very bottom of this page there are department, room and informations that provide shop and dinning area advertizments with in the building and these buttons will redirect the user to another new search containing only the waiting and refreshment area locations. Also at the left edge of the page the print action option and email option buttons are placed.
 
 
 
->###System requirement
+
+
+>###System requirements
+
+---
+
+
 
 ####Functional requirements
-___
 
-• Whenever new user appears to use the system at first glance he has three options for search, to search direction: by department, room/desk or shop and dinning, Such as radiology department. 
-•after the first interaction, the interface will appear with list of directions and then he can choose any of the directions from the list and browse it with more details on the screen.
-•the displayed information will show details like:  walking distance, time it takes, direction path starting from the kiosk terminal up to the chosen destination, description and map. During browsing through direction user should have possibility to return back to search result.
-• The user has the option either to print the map or
-• He/she can email or send the map to his phone.
-•if kiosk is idle and nobody uses it for the moment, a map which will show the whole building will appear by default; moreover news of the day will appear at the very bottom left of the screen.
-• The user can browse and have access to the news from the display.
-• Taking into consideration the user for the system might be computer illiterates and doesn’t have any experience with similar system it should be appealing and have to have easy to use functions like single touch on the screen.
-• Tough the user have the right to access to files on the kiosk, it is prohibited to gain kiosk functionality related task.
-•the recorded voice guide is designed to promote users to use the system and help the user with the functionality of the system. This message should be played periodically when someone is using the system.
+
+• Whenever new users come to use the system they should be provided with two options for search, they can search directions by department name or search direction by room/desk number. 
+
+• After the first interaction, the interface will appear with list of directions and then users should be able to choose any of the directions from the list and browse it with more details on the screen.
+
+• The displayed information should show details such as:  walking distance, the time it takes to reach from current position, direction path starting from the kiosk terminal up to the chosen destination, description and the map. During browsing through direction user should have possibility to return back to search result.
+
+• The user has the option either to print the map or Users should be able to email or send the map image to thier personal phone where they can further edit it if they want.
+
+• If kiosk is idle and nobody uses it for some time, a general map which will show the whole building should appear on the whole screen.
+
+• The users also can browse and have access to the news and other aditional informations from the display.
+
+
+• Tough the user have the right to access to files on the kiosk, system should not let unauhorized users to edit any functionality related tasks.
+
+• The recorded voice guide is designed to promote users to use the system and help the user with the functionality of the system. This message should be played periodically when someone is using the system.
+
 • All terminals found in the hospital work at the same moment (simultaneously) and give the information requested at the same level.
-• the number of users who uses the kiosk and the specific task they perform like the map that was displayed to them and whether the map being printed will be stored as a data.
-•possible tasks will be designed for the administrator like adding, editing and deleting directions when conditions change, like an out-of-service elevator or closed hallway. And news, viewing statistical data;
-• The administrator’s task should be secured from unauthorized person, authentication is checked using password and user name.
+
+• System should be able to store number of users who uses the kiosk and the specific task they perform like the map that was displayed. It also should be able to count how many prints were made during the day and store as a raw data.
+
+• Possible tasks will be designed for the administrator like adding, editing and deleting directions when conditions change, like an out-of-service elevator or closed hallway. And news, viewing statistical data
+
+• The administrator’s task should be secured from unauthorized person, system should ask authentication check when admin tasks are being provoked. This way only users with the right password and user name can access sensetive datas.
+
+
 
 
 >###Non-functional requirments
+--------------
+
 
 ####Usability 
-The interfaces are very straight and simple to use. The map simply spots your current location; draw the path that you follow until you reach your destination. The system spots facilities, stairs, and emergency exits with icons and explain them. Make rest-rooms stand out (more often than not, the first thing visitors will look for when they enter your building). The maps will give a better sense of space, distance and direction.
-The direction is signified by buttons. Make them large, the text self-explanatory and present them clustered in a designated area, the audio guide makes the path easier to understand, even if we were unable to understand the path from the map. Above all the audio will help for disabled patients, have eyesight problem and the user can be sited and able to the kiosk
-4.2. Reliability
-These applications interface, stop users from changing the configuration of software or downloading computer viruses.it provides a 24, 7 services, and includes a fully-fledged digital signage system. : improved patient-flow, an increase in on-time appointments, more efficient use of staff time, decrease costs and a significantly boosted patient experience, all at a cost far less than you would pay a single FTE.
-4.3. Efficiency
-4.4. Other Non-functional Requirement
+
+The interfaces should be very straight forward and simple to use. The map simply spots your current location; draw the path that you follow until you reach your destination. The system spots facilities, stairs, and emergency exits with icons and explain them. 
+
+Make rest-rooms stand out (first thing visitors might look for when they enter the building). The maps should give a better sense of space, distance and direction.
+
+The directions are signified by buttons. Make them large, the text self-explanatory and present them clustered in a designated area, the audio guide makes the path easier to understand, even if we were unable to understand the path from the map. 
+
+####Reliability
+The application, should stop users from changing the configuration of software or downloading computer viruses. In other word, it should be self defensive! 
+It provides a 24/7 services, and includes a fully-fledged digital signage system. It must be checked if not mentained every 24 hour so it can run the next day efficiently.
+
+####Efficiency
+
+The system should working as it is designed for electric supplies to it should be available at all times. incase of power loss the system should reserve some power to display a notification that it is not working properly.
+
+>###Other Non-functional Requirements
+
+----
+
 • The project doesn’t need to cost lot of money as the company’s request so we minimize the Internet traffic; no additional cost could be added to the project like additional software cost.
-• As the system will be viable, so we could not revile the source code to the public;
-• The company set 9 months to implement and deliver the system to them.
-2 Project Management
- In order to prepare this documentation it took us more than 60 hours, probably each person take 20 hrs. And the most difficult part was to decide on which system should we take as our project because the way finding system has both a web based application that could be run on Pcs and the kiosk terminal ,which we consider now. We were about to write about the web based app however we found it having too much details and with the time that we had we found It better to take this system. We almost write for both options and that’s way we had to linger on the project submission deadline. However to be genuine we didn’t start the project in time we promised ourselves not to rush when another project came up.
+
+• Once the system is aviable for servie at Hayat Hospital,the source code will be avalable to the public
+
+• Our company sets 9 months to implement and deliver the system to Hayat Hospital.
+
+>### Project Management
+
+A lot of blood and tear were set in writing this project for about 60 hours raughly, Though there has been some fallouts in the group members and first plan structure, the project has been managed to come this far. The most difficult part was to actually have to organize teams and make sure everyone is doing their pard to meet deadlines.IN THE FUTURE,  we have learnt that doing once responsibility and waiting the other members to fill their own gap will not help accomplish.
+
+The other major set back was the continious change of plan. We were about to write a documentation of a web based application for the same organization but then again time, which we fail to use properly, became our enemy and forced us to minimize our work. After all this trouble and being alone at the end, the final product has come out as you saw it above.
+
+Time spent:
+  * Lily Gebremariam:**6 hours**
+  * Sem Gebresilassie:**50 Hours**
+
 
 
 
